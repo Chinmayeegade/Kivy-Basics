@@ -1,0 +1,12 @@
+TI
+<TI>:
+    rows:3
+    TextInput:
+        text:"Enter text: "
+        id:my_TextInput
+        multiline: False
+        on_text_validate:root.on_text_validate(self)
+    Label:
+        text: my_TextInput.text
+        text: root.text_input_str
+        multiline:True

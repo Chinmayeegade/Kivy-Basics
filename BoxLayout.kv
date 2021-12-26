@@ -1,0 +1,27 @@
+#Intoduce the main interface:
+#Use tab spacings for all indentations
+BL
+<BL>:
+    orientation: "vertical"     #or "horizontal"
+    spacing: "10dp"
+    Button:
+        text: "A"
+        size_hint: 0.5,0.2
+    #(width,height) size_hint is a proportional property which has can be used independently or along with the size parameter and can have a value None(if used along with size) or decimal between 0 to 1 (size cannot be specified without specifying size_hint)
+        pos_hint: {"center_x":0.5}
+    #The pos_hint (position proportion) is to be specified as in the form of a dictionary; the keys of the key value pairs being: for horizontal: "x"/"center_x"/"right" for vertical: "y"/"center_y"/"top" and the values being decimals between 0 to 1
+    # A layout can be embedded inside a Layout:
+    BoxLayout:
+        size_hint: 0.5,0.5
+        pos_hint: {"center_x":0.5}
+        orientation: "horizontal"
+        Button
+            text: "B1"
+        Button:
+            text: "B2"
+        Button:
+            text: "B3"
+    Button:
+        text: "C"
+        size_hint: 0.5,0.2
+        pos_hint: {"center_x":0.5}

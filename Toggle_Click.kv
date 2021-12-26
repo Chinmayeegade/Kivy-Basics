@@ -1,0 +1,17 @@
+Enabling_Button_Click
+<Enabling_Button_Click>:
+    cols:3
+    ToggleButton:
+        text: "OFF"
+        on_state: root.on_toggle_press(self)
+    Button:
+        text: "Count"
+        font_name: "DejaVuSans.ttf"
+        font_size: "50dp"
+        on_press: root.on_button_clicked()
+        disabled: not root.count_enabled
+    Label:
+        text: root.my_text
+        font_name: "DejaVuSans.ttf"
+        font_size: "50dp"
+        color: 1,0,1,1

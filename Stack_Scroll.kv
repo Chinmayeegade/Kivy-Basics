@@ -1,0 +1,11 @@
+SV
+<SV@ScrollView>: #only one child can be taken
+    SL:
+        size_hint: 1, None
+        height: self.minimum_height
+<SL>:
+    orientation: "lr-tb"        #or lr-bt or rl-tb or rl-bt
+    #l=left,r=right,t=top,b=bottom
+    #lr-tb = left to right and top to bottom
+    padding: ("20dp","20dp","20dp","20dp")          #(l,t,r,b) #outside margins
+    spacing: "10dp","10dp"      #(horizontal, vertical)
